@@ -1,0 +1,59 @@
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+body {
+    text-align: center;
+    font-family: Impact;
+}
+div {
+    height: auto;
+}
+
+.container {
+    margin: auto;
+    width: 720px;
+    min-height: 100px;
+}
+
+#header {
+    background-color: lightgrey;
+    text-align: justify;
+}
+
+#body {
+    background-color: #DDDDDD;
+}
+
+.step-title {
+    padding-left: 10px;
+    text-align: justify;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.step-form {
+    text-align: center;
+    letter-spacing: 30px;
+}
+
+.step-form {
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.selection-div {
+    background-color: darkgrey;
+    margin-top: 10px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+#footer {
+    background-color: lightgrey;
+    line-height: 100px;
+    vertical-align: middle;
+}

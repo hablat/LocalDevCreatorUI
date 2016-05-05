@@ -8,6 +8,7 @@
 <body>
     <div class="container" id="header">
         <p>This will be our header</p>
+        <button id="prev-button" type="button" onclick="prev();" style="display: none;">Go Back!</button>
     </div>
     <div class="container" id="body">
         <div class="step" id="step1">
@@ -15,25 +16,50 @@
                 <p>Select Installation</p>
             </div>
             <div class="step-form" id="step1-form">
-                <input id="drupal-radio" type="radio" name="installation" value="drupal" checked>
-                    <div class="selection-div">
-                        <label for="drupal-radio" class="selection">Drupal</label>
-                    </div>
-                <input id="moodle-radio" type="radio" name="installation" value="moodle">
-                    <div class="selection-div">
-                        <label for="moodle-radio" class="selection">Moodle</label>
-                    </div>
+                <div class="selection-div">
+                    <input id="drupal-radio" type="radio" name="installation" value="drupal" onclick="next(this);">
+                    <label for="drupal-radio" class="selection">Drupal</label>
+                </div>
+                <div class="selection-div">
+                    <input id="moodle-radio" type="radio" name="installation" value="moodle" onclick="next(this);">
+                    <label for="moodle-radio" class="selection">Moodle</label>
+                </div>
             </div>
             <div class="step-title">
                 <p>&nbsp;</p>
             </div>
         </div>
-        <div id="step-through">
-
+        <div class="step" id="step2" style="display: none;">
+            <div class="step-title" id="step2-title">
+                <p>Select Stack</p>
+            </div>
+            <div class="step-form" id="step2-form">
+                <div class="stack-selection" id="drupal-base">
+                    <h3 class="stack-title">Base</h3>
+                    <p>Drupal + MariaDB</p>
+                </div>
+                <div class="stack-selection" id="apache-solr">
+                    <h3 class="stack-title">ApcheSolr</h3>
+                    <p>ApacheSolr search engine</p>
+                </div>
+                <div class="stack-selection" id="memcache">
+                    <h3 class="stack-title">Memcache</h3>
+                    <p>caching engine</p>
+                </div>
+                <div class="stack-selection" id="freeipa">
+                    <h3 class="stack-title">FreeIPA</h3>
+                    <p>Directory and LDAP server</p>
+                </div>
+            </div>
+        </div>
+        <div class="step-title">
+            <p>&nbsp;</p>
         </div>
     </div>
     <div class="container" id="footer">
         <p>This will be our footer</p>
     </div>
+
+    <script type="text/javascript" src="js\localdevui.stepthrough-1.0.js"></script>
 </body>
 </html>

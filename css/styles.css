@@ -18,12 +18,28 @@ div {
 }
 
 #header {
+    position: relative;
     background-color: lightgrey;
     text-align: justify;
 }
 
 #body {
     background-color: #DDDDDD;
+    height: 300px;
+}
+
+#prev-button {
+    border: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-top-left-radius: 25px;
+    padding: 4px;
+    background-color: #DDDDDD;
+    float: right;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .step-title {
@@ -35,7 +51,6 @@ div {
 
 .step-form {
     text-align: center;
-    letter-spacing: 30px;
 }
 
 .step-form {
@@ -45,11 +60,36 @@ div {
 
 .selection-div {
     background-color: darkgrey;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    letter-spacing: 30px;
+}
+
+.selection {
+    display: block;
+    width: 100%;
 }
 
 input[type=radio] {
     display: none;
+}
+
+.stack-selection {
+    background-color: darkgrey;
+    float: left;
+    height: 170px;
+    width: 170px;
+    margin: 5px;
+    margin-top: 50px;
+}
+
+p.stack-selection {
+    font-size: 12px;
+}
+
+.step-title {
+    font-size: large;
+    letter-spacing: 3px;
 }
 
 #footer {

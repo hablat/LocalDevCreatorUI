@@ -34,26 +34,38 @@
                 <p>Select Stack</p>
             </div>
             <div class="step-form" id="step2-form">
-                <div class="stack-selection" id="drupal-base">
-                    <h3 class="stack-title">Base</h3>
-                    <p>Drupal + MariaDB</p>
-                </div>
-                <div class="stack-selection" id="apache-solr">
-                    <h3 class="stack-title">ApcheSolr</h3>
-                    <p>ApacheSolr search engine</p>
-                </div>
-                <div class="stack-selection" id="memcache">
-                    <h3 class="stack-title">Memcache</h3>
-                    <p>caching engine</p>
-                </div>
-                <div class="stack-selection" id="freeipa">
-                    <h3 class="stack-title">FreeIPA</h3>
-                    <p>Directory and LDAP server</p>
-                </div>
+                <label class="stack-selection" id="drupal-base">
+                    <input id="base-check" type="checkbox" name="stack-checkbox" value="base">
+                    <div>
+                        <h3 class="stack-title">Base</h3>
+                        <p>Drupal + MariaDB</p>
+                    </div>
+                </label>
+                <label class="stack-selection" id="apache-solr">
+                    <input id="apachesolr-check" type="checkbox" name="stack-checkbox" value="apachesolr">
+                    <div>
+                        <h3 class="stack-title">ApacheSolr</h3>
+                        <p>ApacheSolr search engine</p>
+                    </div>
+                </label>
+                <label class="stack-selection" id="memcache">
+                    <input for id="memcache-check" type="checkbox" name="stack-checkbox" value="memcache">
+                    <div>
+                        <h3 class="stack-title">Memcache</h3>
+                        <p>caching engine</p>
+                    </div>
+                </label>
+                <label class="stack-selection" id="freeipa">
+                    <input id="freeipa-check" type="checkbox" name="stack-checkbox" value="freeipa">
+                    <div>
+                        <h3 class="stack-title">FreeIPA</h3>
+                        <p>Directory and LDAP server</p>
+                    </div>
+                </label>
             </div>
-        </div>
-        <div class="step-title">
-            <p>&nbsp;</p>
+            <div class="next-div">
+                <button id="next-button" type="button" value="stack" onclick="next(this);">CONTINUE</button>
+            </div>
         </div>
     </div>
     <div class="container" id="footer">

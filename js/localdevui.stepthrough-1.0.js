@@ -9,9 +9,11 @@ function next(e) {
     if(value == 'drupal') {
         //alert("DRUPAL");
         step = 2;
-    } else if(value = 'moodle') {
+    } else if(value == 'moodle') {
         //alert("MOODLE");
         step = 2;
+    } else if(value == 'stack') {
+        alert('STACK BITCH!');
     }
 
     if(step > 1) {

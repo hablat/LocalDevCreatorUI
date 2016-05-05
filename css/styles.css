@@ -11,6 +11,15 @@ div {
     height: auto;
 }
 
+button {
+    border: none;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 4px;
+    background-color: #BBBBBB;
+    height: 40px;
+}
 .container {
     margin: auto;
     width: 720px;
@@ -25,20 +34,15 @@ div {
 
 #body {
     background-color: #DDDDDD;
-    height: 300px;
+    height: 330px;
 }
 
 #prev-button {
-    border: none;
-    font-size: 16px;
-    letter-spacing: 2px;
     border-top-left-radius: 25px;
-    padding: 4px;
-    background-color: #DDDDDD;
+    border-bottom-left-radius: 25px;
     float: right;
-    height: 40px;
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     right: 0;
 }
 
@@ -77,19 +81,48 @@ input[type=radio] {
 .stack-selection {
     background-color: darkgrey;
     float: left;
-    height: 170px;
-    width: 170px;
-    margin: 5px;
+    height: 160px;
+    width: 160px;
+    margin: 8px;
     margin-top: 50px;
 }
 
-p.stack-selection {
-    font-size: 12px;
+.stack-title {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.stack-selection p {
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+.stack-selection input[type=checkbox] {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+.stack-selection input[type=checkbox]:checked + div {
+    background-color: white;
+}
+
+.stack-selection div {
+    height: 100%;
+    width: 100%;
+    padding: 2px;
 }
 
 .step-title {
-    font-size: large;
+    font-size: 24px;
     letter-spacing: 3px;
+}
+
+#next-button {
+    border-radius: 25px;
+    padding: 4px;
+    margin-top: 15px;
 }
 
 #footer {

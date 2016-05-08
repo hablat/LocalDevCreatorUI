@@ -81,8 +81,8 @@ input[type=radio] {
 .stack-selection {
     background-color: darkgrey;
     float: left;
-    height: 160px;
-    width: 160px;
+    height: 164px;
+    width: 164px;
     margin: 8px;
     margin-top: 50px;
 }
